@@ -22,10 +22,14 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = 'v=#jr1bhomtv)tey(_!yjn)1(k-$ep!%+c^$zf7ppsry$%2q_o'
 
-# SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
-ALLOWED_HOSTS = []
+** PS: if Heroku isn't recognized as a command, please close your terminal and editor and then re-open it.
+
+# SECURITY WARNING: don't run with debug turned on in production!
+DEBUG = False
+
+ALLOWED_HOSTS = ['muskan-compiler.herokuapp.com', 'localhost', '127.0.0.1']
 
 
 # Application definition
